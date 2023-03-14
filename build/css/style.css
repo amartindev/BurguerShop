@@ -362,23 +362,64 @@ img {
 }
 
 .header {
+  position: relative;
+}
+
+.background-image-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(/build/img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
+  z-index: 1;
+}
+
+.background-image-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/build/img/banner-bgremove.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: 3;
 }
 
 .header_text {
+  position: relative;
   text-align: center;
   color: #FFFFFF;
 }
 .header_text p {
+  position: relative;
   margin: 0;
+  z-index: 10;
 }
-.header_text h2 {
+.header_text .header_text_back {
+  position: relative;
   font-size: calc(1rem + 18vw);
-  margin: 3rem;
+  top: -3rem;
+  left: 0;
+  right: 0;
   font-family: "Finger Paint", cursive;
+  z-index: 2;
+}
+.header_text .header_text_front {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  right: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
+  font-size: calc(1rem + 18vw);
+  font-family: "Finger Paint", cursive;
+  z-index: 4;
 }
 
 .barra {
@@ -430,7 +471,7 @@ img {
 }
 .slider h2 {
   text-align: center;
-  padding-top: 2rem;
+  padding: 3rem 0;
 }
 
 .slider-container {

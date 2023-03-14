@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">     <title>Burguer Shop</title>
-    <link rel="stylesheet" href="build/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/style.css">
     <script src="https://kit.fontawesome.com/e8e88b20b1.js" crossorigin="anonymous"></script>
     <script src="/build/js/scroll.js"></script>
@@ -16,6 +16,8 @@
 </head>
 <body>
     <header class="header">
+        <div class="background-image-1"></div>
+        <div class="background-image-2"></div>
         <div class="barra">
             <a class="logo" href="index.html">
                 <img class="logo_imagen" src="/build/img/logo.png"></img>
@@ -29,385 +31,434 @@
             </nav>
         </div>
         <div class="header_text">
-            <h2>BURGER</h2>
+            <h2 class="header_text_back">BURGER</h2>
+            <h2 class="header_text_front">BURGER</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p> . </p>
         </div>
     </header>
-    <div id="toasts"></div>
-    <div id="burgers" class="slider">
-        <h2>Burgers</h2>
-        <div class="slider-container swiper">  
-            <div class="slider-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <div class="card-image">
-                                <img src="/build/img/burg1.png" alt="" class="card-img">
+    <section class="items">
+        <div id="toasts"></div>
+        <!-- Burgers -->
+        <div id="burgers" class="slider">
+            <h2>Burgers</h2>
+            <!-- Slider main container -->
+            <div class="swiper" id="swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/build/img/burg1.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Burger Cool</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $12.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Burger Cool</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $12.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg2.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg2.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Black Chiken</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $13.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Black Chiken</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $13.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg3.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg3.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Burger Max</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $20.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Burger Max</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $20.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg4.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg4.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Burger Full</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $18.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Burger Full</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $18.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg5.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg5.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Big Angus</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $18.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Big Angus</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $18.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg6.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg6.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Black Veggi</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $15.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Black Veggi</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $15.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg7.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg7.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Veggi Max</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $20.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Veggi Max</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $20.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg8.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg8.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Pink</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $14.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Pink</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $14.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/burg9.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/burg9.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Pork XL</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $18.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div id="snacks" class="slider">
-        <h2>Snacks</h2>
-        <div class="slider-container swiper">  
-            <div class="slider-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <div class="card-image">
-                                <img src="/build/img/snack1.png" alt="" class="card-img">
+                            <div class="card-content">
+                                <h3 class="name">Pork XL</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $18.50</p>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Fries</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/snack2.png" alt="" class="card-img">
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Zig-Zag Fries</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $6.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/snack3.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Hulled Fries</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/snack4.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Jalapeno Poutine</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $7.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/snack5.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Onion Rings</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/snack6.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Spiropape</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $7.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
                         </div>
                     </div>
                 </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" data-target="#swiper1"></div>
+                <div class="swiper-button-next" data-target="#swiper1"></div>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
         </div>
-    </div>
-    <div id="drinks" class="slider">
-        <h2>Drinks</h2>
-        <div class="slider-container swiper">  
-            <div class="slider-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <div class="card-image">
-                                <img src="/build/img/drink1.png" alt="" class="card-img">
+        <!-- Snacks -->
+        <div id="snacks" class="slider">
+            <h2>Snacks</h2>
+            <!-- Slider main container -->
+            <div class="swiper" id="swiper2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/build/img/snack1.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Strawberry Shake</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Fries</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/drink2.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/snack2.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Choco Milkshake</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Zig-Zag Fries</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $6.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/drink3.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/snack3.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Coke</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Hulled Fries</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/drink4.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/snack4.png" alt="" class="card-img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="name">Lemonade</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                            <div class="card-content">
+                                <h3 class="name">Jalapeno Poutine</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $7.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="/build/img/drink5.png" alt="" class="card-img">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/snack5.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Onion Rings</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
                             </div>
                         </div>
-                        <div class="card-content">
-                            <h3 class="name">Water</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
-                            <p class="price">Price: $5.50</p>
-                        </div>
-                        <div class="shop">
-                            <input class="form-cant" type="number" placeholder="Cant." min="1">
-                            <button class="form-submit addToCart">Add</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/snack6.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Spiropape</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $7.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" data-target="#swiper2"></div>
+                <div class="swiper-button-next" data-target="#swiper2"></div>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
         </div>
-    </div>
+        <!-- Drinks -->
+        <div id="drinks" class="slider">
+            <h2>Drinks</h2>
+            <!-- Slider main container -->
+            <div class="swiper" id="swiper3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/build/img/drink1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Strawberry Shake</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/drink2.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Choco Milkshake</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/drink3.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Coke</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/drink4.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Lemonade</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="/build/img/drink5.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="name">Water</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non velit arcu.</p>
+                                <p class="price">Price: $5.50</p>
+                            </div>
+                            <div class="shop">
+                                <input class="form-cant" type="number" placeholder="Cant." min="1">
+                                <button class="form-submit addToCart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" data-target="#swiper3"></div>
+                <div class="swiper-button-next" data-target="#swiper3"></div>
+            </div>
+        </div>
+    </section>
     <div id="cart" class="shopping-cart-containter">
         <h2>Shopping Cart</h2>
         <div class="shopping-cart">
