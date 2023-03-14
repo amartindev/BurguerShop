@@ -46,7 +46,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage, itemCant){
             </div>
             <div class="shopping-cant-container">
                 <input class="shopping-cant" type="number" min="1" value="${itemCant}">
-                <button class="shopping-cancel">X</button>
+                <button class="shopping-cancel"><i class="fa-regular fa-circle-xmark"></i></button>
             </div>
         </div>`;
     shoppingCartRow.innerHTML = shoppingCartContent;
@@ -114,3 +114,15 @@ function shoppingSucessClicked(){
     alert('Thank you for your purchase, your order is on its way')
     newShopping.innerHTML=''
 }
+
+const botonCarrito = document.querySelector('#boton-carrito');
+const cerrarCarrito = document.querySelector('#cerrar-carrito');
+const seccionCarrito = document.querySelector('#seccion-carrito');
+
+botonCarrito.addEventListener('click', () => {
+  seccionCarrito.classList.toggle('visible');
+});
+
+cerrarCarrito.addEventListener('click', () => {
+    seccionCarrito.classList.toggle('visible')
+})
