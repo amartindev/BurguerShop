@@ -1,4 +1,5 @@
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+const shoppingCartSection = document.getElementById('section-go-shopping-cart');
 
 addToShoppingCartButtons.forEach((addToCartButton) => {
     addToCartButton.addEventListener('click', addToCartClicked);
@@ -93,7 +94,9 @@ function addItemToShoppingCartNotification(message = 'Product added successfully
 
     const notif = document.createElement('div')
     const notifIcon = document.createElement('span')
-    
+
+    actualizarIconoCarrito();
+
     notif.classList.add('toast')
     notif.classList.add(type)
     
@@ -108,7 +111,15 @@ function addItemToShoppingCartNotification(message = 'Product added successfully
     setTimeout(() => {
         notif.remove()
     }, 3000)
+
 }
+
+function actualizarIconoCarrito() {
+    var icono = document.getElementById("boton-carrito");
+    icono.classList.remove("bi-cart-fill");
+    icono.classList.add("bi-cart-check-fill");
+    shoppingCartSection.classList.remove('invisible');
+  }
 
 function shoppingSucessClicked(){
     alert('Thank you for your purchase, your order is on its way')
@@ -126,3 +137,4 @@ botonCarrito.addEventListener('click', () => {
 cerrarCarrito.addEventListener('click', () => {
     seccionCarrito.classList.toggle('visible')
 })
+
