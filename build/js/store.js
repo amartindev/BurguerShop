@@ -129,6 +129,11 @@ function shoppingSucessClicked(){
 const botonCarrito = document.querySelector('#boton-carrito');
 const cerrarCarrito = document.querySelector('#cerrar-carrito');
 const seccionCarrito = document.querySelector('#seccion-carrito');
+const botonCarritoGlow = document.querySelector('#boton-carrito-glow');
+
+botonCarritoGlow.addEventListener('click', () => {
+    seccionCarrito.classList.toggle('visible');
+  });
 
 botonCarrito.addEventListener('click', () => {
   seccionCarrito.classList.toggle('visible');
@@ -137,4 +142,3 @@ botonCarrito.addEventListener('click', () => {
 cerrarCarrito.addEventListener('click', () => {
     seccionCarrito.classList.toggle('visible')
 })
-
